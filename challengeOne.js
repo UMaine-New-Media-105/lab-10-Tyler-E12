@@ -4,6 +4,7 @@ let myCar;
 let myCar1;
 let myCar2;
 let myCar3;
+let randomSpeed = (1,5)
 let lane1 = [];
 let lane2 = [];
 let lane3 = [];
@@ -11,29 +12,29 @@ let lane4 = [];
 
 function setup() {
   createCanvas(400, 400);
-  myCar1 = new Car(0, 80, 2);
+  myCar1 = new Car(0, 80, randomSpeed);
   for (let i = 0; i < 3; i++) {
     let x = 140;
     let y = 80;
-    lane1.push(new Car(x, y, 2));
+    lane1.push(new Car(x, y, randomSpeed));
   }
-  myCar2 = new Car2(0, 160, 3);
+  myCar2 = new Car2(0, 160, randomSpeed);
   for (let i = 0; i < 3; i++) {
     let x = 140;
     let y = 80;
-    lane2.push(new Car2(x, y, 3));
+    lane2.push(new Car2(x, y, randomSpeed));
   }
-  myCar = new Car(0, 240, 1);
+  myCar = new Car(0, 240, randomSpeed);
   for (let i = 0; i < 3; i++) {
     let x = 140;
     let y = 80;
-    lane3.push(new Car(x, y, 1));
+    lane3.push(new Car(x, y, randomSpeed));
   }
-  myCar3 = new Car(0, 290, 3);
+  myCar3 = new Car(0, 290, randomSpeed);
   for (let i = 0; i < 3; i++) {
     let x = 140;
     let y = 80;
-    lane3.push(new Car(x, y, 5));
+    lane3.push(new Car(x, y, randomSpeed));
   }
 }
 
